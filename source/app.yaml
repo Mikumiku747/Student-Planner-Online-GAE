@@ -9,12 +9,14 @@ handlers:
   script: main.app
 - url: /welcome
   script: main.app
+- url: /dev/agent
+  script: dev.app
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
 - url: /resource
   static_dir: resource
-- url: .*
+- url: /.*
   script: main.app
 
 libraries:

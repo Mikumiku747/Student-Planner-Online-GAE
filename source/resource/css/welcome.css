@@ -1,32 +1,27 @@
-#welcome_title {
-	padding:25px;
-	font-size: 50px
-}
-
-#welcome_page_body {
-	margin-top:300px;
-}
-
-#site_description {
-	border: solid 2px #000;
-	padding: 5px;
-	width: 600px;
+#welcome-wrap {
 	margin:auto;
-	text-align: center;
-	background:#CCC;
+	margin-top: 100px;
+	width:1000px;
 }
 
-#sign_in_button{
-	margin:auto;
-	margin-top: 20px;
-	border: 1px solid #000;
-	padding:15px;
-	background:#CCC;
-	width:150px;
+#title-box {
+	width:750px;
+	padding:30px;
+	font-size: 30px
 }
 
-#sign_in_link {
-	text-decoration: None;
-	text-align: center;
-	color:#007;
+#description-box {
+	width:600px;
+	padding:10px;
+}
+
+#signin-box {
+	width: 80px;
+	padding:10px;
+	background:#8080C0;
+}
+
+#signin-link {
+	text-decoration: none;
+	color:#005;
 }

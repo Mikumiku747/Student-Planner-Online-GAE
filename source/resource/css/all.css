@@ -1,0 +1,13 @@
+body {
+	font-family: sans-serif, monospace;
+	background: url(/resource/img/bg-tile.png)
+}
+
+.normalbox {
+	border:solid 2px #333;
+	background:#CCC;
+}
+
+.pagename-box {
+	
+}

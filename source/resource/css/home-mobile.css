@@ -1,6 +1,6 @@
 #home-wrap {
-	width:1200px;
-	height:601px;
+	width:700px;
+	height: 1120px;
 	border:solid 2px #005;
 	padding:10px;
 	margin:auto;
@@ -8,20 +8,8 @@
 }
 
 #title-box {
-	width:500px;
+	width:675px;
 	padding:10px;
-	float:left;
-}
-
-#logo-box {
-	padding:0px;
-	float:right;
-}
-
-#heading-filler {
-	float:left;
-	width:509px;
-	height:61px;
 }
 
 #title-text {
@@ -30,28 +18,11 @@
 	margin-top: 0px;	
 }
 
-#logo-logo {
-	display: inline;
-	text-align: right;
-	border: solid 1px #999;
-	width:55px;
-	height: 55px;
-}
-
 #greeting-box {
-	float:left;
-	width:500px;
+	width:675px;
 	padding:10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-#signout-box {
-	float:right;
-	padding:10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background:#8080C0;
 }
 
 #signout-link {
@@ -60,16 +31,15 @@
 }
 
 #timetable-box {
-	float:left;
 	padding:10px;
-	width:750px;
-	height: 450px;
+	width:675px;
+	height: 432px;
 }
 
 #timetable-iframe {
 	border:none;
-	width:745px;
-	height: 418px;
+	width:675px;
+	height: 400px;
 	background: #FFF;
 	scrolling:yes;
 }
@@ -80,16 +50,16 @@
 }
 
 #events-box {
-	float:right;
+	margin-top: 10px;
 	padding:10px;
-	width:392px;
-	height: 450px;
+	width:675px;
+	height: 482px;
 }
 
 #events-iframe {
 	border:none;
-	width:387px;
-	height: 418px;
+	width:675px;
+	height: 450px;
 	background: #FFF
 }
 
