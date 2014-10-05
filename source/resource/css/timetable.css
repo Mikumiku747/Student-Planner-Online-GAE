@@ -1,0 +1,26 @@
+body {
+	background: #FFF;
+	}
+
+td {
+	border: solid 2px black;
+	min-width: 100px;
+	border-collapse: seperate;
+	border-spacing: 0px;
+	}
+
+#timetable-wrap {
+	background: #FFF;
+	}
+
+#names {
+	font-style: bold;
+	}
+
+.week-mark {
+	font-size: 20;
+	}
+
+.minitable td{
+	border: none;
+	}

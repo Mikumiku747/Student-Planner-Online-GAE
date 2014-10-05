@@ -24,10 +24,11 @@ class HomePageHandler(webapp2.RequestHandler):
 		else:
 			auth_url = users.create_logout_url("/")
 			#Render a template and send it off to the user
-			if useragent.checkMobile(self.request):
-				template = JINJA_ENVIRONMENT.get_template('templates/homepage-mobile.html')
-			else:
-				template = JINJA_ENVIRONMENT.get_template('templates/homepage.html')
+			#Uncomment to allow serving a "mobile" site to mobile users
+			#if useragent.checkMobile(self.request):
+				#template = JINJA_ENVIRONMENT.get_template('templates/homepage-mobile.html')
+			#else:
+			template = JINJA_ENVIRONMENT.get_template('templates/homepage.html')
 			self.response.write(template.render({'user_nickname':user.nickname(), 'auth_url':auth_url}))
 
 

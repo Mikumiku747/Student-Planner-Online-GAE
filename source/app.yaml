@@ -9,6 +9,8 @@ handlers:
   script: main.app
 - url: /welcome
   script: main.app
+- url: /timetable
+  script: timetable.app
 - url: /dev/agent
   script: dev.app
 - url: /favicon\.ico
