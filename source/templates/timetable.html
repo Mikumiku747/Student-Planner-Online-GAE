@@ -9,47 +9,86 @@
 <body><div id="timetable-wrap">
 	<table id="timetable">
 		<tr>
-			<td><strong><span class="week-mark">Week A</span></strong></td>
+			<td><strong><span class="week-mark">
+				{% if isweeka %}
+				Week A
+				{% else %}
+				Week B
+				{% endif %}
+				</span></strong></td>
 			<td><strong>Monday</strong></td>
 			<td><strong>Tuesday</strong></td>
 			<td><strong>Wednesday</strong></td>
 			<td><strong>Thursday</strong></td>
 			<td><strong>Friday</strong></td>
 		</tr>
+		{% if isweeka %}
 		<tr>
 			<td>Period 1</td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[0][0][0]}}</center></td></tr><tr><td><center>{{dataa[0][0][1]}}</center></td></tr><tr><td><center>{{dataa[0][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[1][0][0]}}</center></td></tr><tr><td><center>{{dataa[1][0][1]}}</center></td></tr><tr><td><center>{{dataa[1][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[2][0][0]}}</center></td></tr><tr><td><center>{{dataa[2][0][1]}}</center></td></tr><tr><td><center>{{dataa[2][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[3][0][0]}}</center></td></tr><tr><td><center>{{dataa[3][0][1]}}</center></td></tr><tr><td><center>{{dataa[3][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[4][0][0]}}</center></td></tr><tr><td><center>{{dataa[4][0][1]}}</center></td></tr><tr><td><center>{{dataa[4][0][2]}}</center></td></tr></table></td>
 		</tr>
 		<tr>
 			<td>Period 2</td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[0][1][0]}}</center></td></tr><tr><td><center>{{dataa[0][1][1]}}</center></td></tr><tr><td><center>{{dataa[0][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[1][1][0]}}</center></td></tr><tr><td><center>{{dataa[1][1][1]}}</center></td></tr><tr><td><center>{{dataa[1][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[2][1][0]}}</center></td></tr><tr><td><center>{{dataa[2][1][1]}}</center></td></tr><tr><td><center>{{dataa[2][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[3][1][0]}}</center></td></tr><tr><td><center>{{dataa[3][1][1]}}</center></td></tr><tr><td><center>{{dataa[3][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[4][1][0]}}</center></td></tr><tr><td><center>{{dataa[4][1][1]}}</center></td></tr><tr><td><center>{{dataa[4][1][2]}}</center></td></tr></table></td>
 		</tr>
 		<tr>
 			<td>Period 3</td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[0][2][0]}}</center></td></tr><tr><td><center>{{dataa[0][2][1]}}</center></td></tr><tr><td><center>{{dataa[0][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[1][2][0]}}</center></td></tr><tr><td><center>{{dataa[1][2][1]}}</center></td></tr><tr><td><center>{{dataa[1][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[2][2][0]}}</center></td></tr><tr><td><center>{{dataa[2][2][1]}}</center></td></tr><tr><td><center>{{dataa[2][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[3][2][0]}}</center></td></tr><tr><td><center>{{dataa[3][2][1]}}</center></td></tr><tr><td><center>{{dataa[3][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[4][2][0]}}</center></td></tr><tr><td><center>{{dataa[4][2][1]}}</center></td></tr><tr><td><center>{{dataa[4][2][2]}}</center></td></tr></table></td>
 		</tr>
 		<tr>
 			<td>Period 4</td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
-			<td><table class="minitable"><tr><td><center>Subject</center></td></tr><tr><td><center>Teacher</center></td></tr><tr><td><center>Location</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[0][3][0]}}</center></td></tr><tr><td><center>{{dataa[0][3][1]}}</center></td></tr><tr><td><center>{{dataa[0][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[1][3][0]}}</center></td></tr><tr><td><center>{{dataa[1][3][1]}}</center></td></tr><tr><td><center>{{dataa[1][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[2][3][0]}}</center></td></tr><tr><td><center>{{dataa[2][3][1]}}</center></td></tr><tr><td><center>{{dataa[2][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[3][3][0]}}</center></td></tr><tr><td><center>{{dataa[3][3][1]}}</center></td></tr><tr><td><center>{{dataa[3][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{dataa[4][3][0]}}</center></td></tr><tr><td><center>{{dataa[4][3][1]}}</center></td></tr><tr><td><center>{{dataa[4][3][2]}}</center></td></tr></table></td>
 		</tr>
-		
-		
+		{% else %}
+		<tr>
+			<td>Period 1</td>
+			<td><table class="minitable"><tr><td><center>{{datab[0][0][0]}}</center></td></tr><tr><td><center>{{datab[0][0][1]}}</center></td></tr><tr><td><center>{{datab[0][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[1][0][0]}}</center></td></tr><tr><td><center>{{datab[1][0][1]}}</center></td></tr><tr><td><center>{{datab[1][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[2][0][0]}}</center></td></tr><tr><td><center>{{datab[2][0][1]}}</center></td></tr><tr><td><center>{{datab[2][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[3][0][0]}}</center></td></tr><tr><td><center>{{datab[3][0][1]}}</center></td></tr><tr><td><center>{{datab[3][0][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[4][0][0]}}</center></td></tr><tr><td><center>{{datab[4][0][1]}}</center></td></tr><tr><td><center>{{datab[4][0][2]}}</center></td></tr></table></td>
+		</tr>
+		<tr>
+			<td>Period 2</td>
+			<td><table class="minitable"><tr><td><center>{{datab[0][1][0]}}</center></td></tr><tr><td><center>{{datab[0][1][1]}}</center></td></tr><tr><td><center>{{datab[0][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[1][1][0]}}</center></td></tr><tr><td><center>{{datab[1][1][1]}}</center></td></tr><tr><td><center>{{datab[1][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[2][1][0]}}</center></td></tr><tr><td><center>{{datab[2][1][1]}}</center></td></tr><tr><td><center>{{datab[2][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[3][1][0]}}</center></td></tr><tr><td><center>{{datab[3][1][1]}}</center></td></tr><tr><td><center>{{datab[3][1][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[4][1][0]}}</center></td></tr><tr><td><center>{{datab[4][1][1]}}</center></td></tr><tr><td><center>{{datab[4][1][2]}}</center></td></tr></table></td>
+		</tr>
+		<tr>
+			<td>Period 3</td>
+			<td><table class="minitable"><tr><td><center>{{datab[0][2][0]}}</center></td></tr><tr><td><center>{{datab[0][2][1]}}</center></td></tr><tr><td><center>{{datab[0][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[1][2][0]}}</center></td></tr><tr><td><center>{{datab[1][2][1]}}</center></td></tr><tr><td><center>{{datab[1][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[2][2][0]}}</center></td></tr><tr><td><center>{{datab[2][2][1]}}</center></td></tr><tr><td><center>{{datab[2][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[3][2][0]}}</center></td></tr><tr><td><center>{{datab[3][2][1]}}</center></td></tr><tr><td><center>{{datab[3][2][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[4][2][0]}}</center></td></tr><tr><td><center>{{datab[4][2][1]}}</center></td></tr><tr><td><center>{{datab[4][2][2]}}</center></td></tr></table></td>
+		</tr>
+		<tr>
+			<td>Period 4</td>
+			<td><table class="minitable"><tr><td><center>{{datab[0][3][0]}}</center></td></tr><tr><td><center>{{datab[0][3][1]}}</center></td></tr><tr><td><center>{{datab[0][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[1][3][0]}}</center></td></tr><tr><td><center>{{datab[1][3][1]}}</center></td></tr><tr><td><center>{{datab[1][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[2][3][0]}}</center></td></tr><tr><td><center>{{datab[2][3][1]}}</center></td></tr><tr><td><center>{{datab[2][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[3][3][0]}}</center></td></tr><tr><td><center>{{datab[3][3][1]}}</center></td></tr><tr><td><center>{{datab[3][3][2]}}</center></td></tr></table></td>
+			<td><table class="minitable"><tr><td><center>{{datab[4][3][0]}}</center></td></tr><tr><td><center>{{datab[4][3][1]}}</center></td></tr><tr><td><center>{{datab[4][3][2]}}</center></td></tr></table></td>
+		</tr>
+		{% endif %}
 	</table>
 </div></body>
 

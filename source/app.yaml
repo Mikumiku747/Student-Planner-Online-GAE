@@ -9,15 +9,26 @@ handlers:
   script: main.app
 - url: /welcome
   script: main.app
+  
 - url: /timetable
   script: timetable.app
+  login: required
+- url: /createtimetable
+  script: timetable.app
+  login: required
+- url: /edittimetable
+  script: timetable.app
+  login: required
+  
 - url: /dev/agent
   script: dev.app
+  
 - url: /favicon\.ico
-  static_files: favicon.ico
+  static_files: logo37x37.ico
   upload: favicon\.ico
 - url: /resource
   static_dir: resource
+  
 - url: /.*
   script: main.app
 

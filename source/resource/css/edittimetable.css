@@ -1,0 +1,32 @@
+#page-wrapper {
+	width:1000px;
+	margin:auto;
+	}
+
+#page-title {
+	padding:10px;
+	width:600px;
+	}
+	
+#timetable-options {
+	padding:10px;
+	}
+
+tr.names td {
+	font-style:bold;
+	}
+	
+.minitable td{
+	border: none;
+	}
+	
+td {
+	border: solid 2px black;
+	min-width: 130px;
+	border-collapse: seperate;
+	border-spacing: 0px;
+	}
+	
+input {
+	width: 130px;
+	}

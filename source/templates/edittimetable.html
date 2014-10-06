@@ -1,0 +1,115 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="/resource/css/all.css">
+	<link rel="stylesheet" href="/resource/css/edittimetable.css">
+	<title>Editing {{nickname}}'s Timetable</title>
+</head>
+
+<body><div id="page-wrapper">
+	<h1 id="page-title" class="normalbox">Timetable editor</h1>
+	<form action="/edittimetable" method=post>
+	<div class="normalbox" style="margin-top:10px;"><table class="table">
+	<tr class="names">
+		<td><strong>Week A</strong></td>
+		<td><strong>Monday</strong></td>
+		<td><strong>Tuesday</strong></td>
+		<td><strong>Wednesday</strong></td>
+		<td><strong>Thursday</strong></td>
+		<td><strong>Friday</strong></td>
+	</tr>
+	
+	<tr>
+		<td>Period 1</td>
+		<td><table class="minitable"><tr><td><input type=text name=AMON1S value="{{weekadata[0][0][0]}}"></td></tr><tr><td><input type=text name=AMON1T value="{{weekadata[0][0][1]}}"></td></tr><tr><td><input type=text name=AMON1L value="{{weekadata[0][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATUE1S value="{{weekadata[1][0][0]}}"></td></tr><tr><td><input type=text name=ATUE1T value="{{weekadata[1][0][1]}}"></td></tr><tr><td><input type=text name=ATUE1L value="{{weekadata[1][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AWED1S value="{{weekadata[2][0][0]}}"></td></tr><tr><td><input type=text name=AWED1T value="{{weekadata[2][0][1]}}"></td></tr><tr><td><input type=text name=AWED1L value="{{weekadata[2][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATHU1S value="{{weekadata[3][0][0]}}"></td></tr><tr><td><input type=text name=ATHU1T value="{{weekadata[3][0][1]}}"></td></tr><tr><td><input type=text name=ATHU1L value="{{weekadata[3][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AFRI1S value="{{weekadata[4][0][0]}}"></td></tr><tr><td><input type=text name=AFRI1T value="{{weekadata[4][0][1]}}"></td></tr><tr><td><input type=text name=AFRI1L value="{{weekadata[4][0][2]}}"></td></tr></table></td>
+	</tr>
+	<tr>
+		<td>Period 2</td>
+		<td><table class="minitable"><tr><td><input type=text name=AMON2S value="{{weekadata[0][1][0]}}"></td></tr><tr><td><input type=text name=AMON2T value="{{weekadata[0][1][1]}}"></td></tr><tr><td><input type=text name=AMON2L value="{{weekadata[0][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATUE2S value="{{weekadata[1][1][0]}}"></td></tr><tr><td><input type=text name=ATUE2T value="{{weekadata[1][1][1]}}"></td></tr><tr><td><input type=text name=ATUE2L value="{{weekadata[1][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AWED2S value="{{weekadata[2][1][0]}}"></td></tr><tr><td><input type=text name=AWED2T value="{{weekadata[2][1][1]}}"></td></tr><tr><td><input type=text name=AWED2L value="{{weekadata[2][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATHU2S value="{{weekadata[3][1][0]}}"></td></tr><tr><td><input type=text name=ATHU2T value="{{weekadata[3][1][1]}}"></td></tr><tr><td><input type=text name=ATHU2L value="{{weekadata[3][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AFRI2S value="{{weekadata[4][1][0]}}"></td></tr><tr><td><input type=text name=AFRI2T value="{{weekadata[4][1][1]}}"></td></tr><tr><td><input type=text name=AFRI2L value="{{weekadata[4][1][2]}}"></td></tr></table></td>
+	</tr>
+	<tr>
+		<td>Period 3</td>
+		<td><table class="minitable"><tr><td><input type=text name=AMON3S value="{{weekadata[0][2][0]}}"></td></tr><tr><td><input type=text name=AMON3T value="{{weekadata[0][2][1]}}"></td></tr><tr><td><input type=text name=AMON3L value="{{weekadata[0][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATUE3S value="{{weekadata[1][2][0]}}"></td></tr><tr><td><input type=text name=ATUE3T value="{{weekadata[1][2][1]}}"></td></tr><tr><td><input type=text name=ATUE3L value="{{weekadata[1][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AWED3S value="{{weekadata[2][2][0]}}"></td></tr><tr><td><input type=text name=AWED3T value="{{weekadata[2][2][1]}}"></td></tr><tr><td><input type=text name=AWED3L value="{{weekadata[2][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATHU3S value="{{weekadata[3][2][0]}}"></td></tr><tr><td><input type=text name=ATHU3T value="{{weekadata[3][2][1]}}"></td></tr><tr><td><input type=text name=ATHU3L value="{{weekadata[3][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AFRI3S value="{{weekadata[4][2][0]}}"></td></tr><tr><td><input type=text name=AFRI3T value="{{weekadata[4][2][1]}}"></td></tr><tr><td><input type=text name=AFRI3L value="{{weekadata[4][2][2]}}"></td></tr></table></td>
+	</tr>
+	<tr>
+		<td>Period 4</td>
+		<td><table class="minitable"><tr><td><input type=text name=AMON4S value="{{weekadata[0][3][0]}}"></td></tr><tr><td><input type=text name=AMON4T value="{{weekadata[0][3][1]}}"></td></tr><tr><td><input type=text name=AMON4L value="{{weekadata[0][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATUE4S value="{{weekadata[1][3][0]}}"></td></tr><tr><td><input type=text name=ATUE4T value="{{weekadata[1][3][1]}}"></td></tr><tr><td><input type=text name=ATUE4L value="{{weekadata[1][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AWED4S value="{{weekadata[2][3][0]}}"></td></tr><tr><td><input type=text name=AWED4T value="{{weekadata[2][3][1]}}"></td></tr><tr><td><input type=text name=AWED4L value="{{weekadata[2][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=ATHU4S value="{{weekadata[3][3][0]}}"></td></tr><tr><td><input type=text name=ATHU4T value="{{weekadata[3][3][1]}}"></td></tr><tr><td><input type=text name=ATHU4L value="{{weekadata[3][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=AFRI4S value="{{weekadata[4][3][0]}}"></td></tr><tr><td><input type=text name=AFRI4T value="{{weekadata[4][3][1]}}"></td></tr><tr><td><input type=text name=AFRI4L value="{{weekadata[4][3][2]}}"></td></tr></table></td>
+	</tr>
+	
+	</table></div>
+	
+	<div class="normalbox" style="margin-top:10px;"><table class="table">
+	<tr class="names">
+		<td><strong>Week B</strong></td>
+		<td><strong>Monday</strong></td>
+		<td><strong>Tuesday</strong></td>
+		<td><strong>Wednesday</strong></td>
+		<td><strong>Thursday</strong></td>
+		<td><strong>Friday</strong></td>
+	</tr>
+	
+	<tr>
+		<td>Period 1</td>
+		<td><table class="minitable"><tr><td><input type=text name=BMON1S value="{{weekbdata[0][0][0]}}"></td></tr><tr><td><input type=text name=BMON1T value="{{weekbdata[0][0][1]}}"></td></tr><tr><td><input type=text name=BMON1L value="{{weekbdata[0][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTUE1S value="{{weekbdata[1][0][0]}}"></td></tr><tr><td><input type=text name=BTUE1T value="{{weekbdata[1][0][1]}}"></td></tr><tr><td><input type=text name=BTUE1L value="{{weekbdata[1][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BWED1S value="{{weekbdata[2][0][0]}}"></td></tr><tr><td><input type=text name=BWED1T value="{{weekbdata[2][0][1]}}"></td></tr><tr><td><input type=text name=BWED1L value="{{weekbdata[2][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTHU1S value="{{weekbdata[3][0][0]}}"></td></tr><tr><td><input type=text name=BTHU1T value="{{weekbdata[3][0][1]}}"></td></tr><tr><td><input type=text name=BTHU1L value="{{weekbdata[3][0][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BFRI1S value="{{weekbdata[4][0][0]}}"></td></tr><tr><td><input type=text name=BFRI1T value="{{weekbdata[4][0][1]}}"></td></tr><tr><td><input type=text name=BFRI1L value="{{weekbdata[4][0][2]}}"></td></tr></table></td>
+	</tr>
+	<tr>
+		<td>Period 2</td>
+		<td><table class="minitable"><tr><td><input type=text name=BMON2S value="{{weekbdata[0][1][0]}}"></td></tr><tr><td><input type=text name=BMON2T value="{{weekbdata[0][1][1]}}"></td></tr><tr><td><input type=text name=BMON2L value="{{weekbdata[0][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTUE2S value="{{weekbdata[1][1][0]}}"></td></tr><tr><td><input type=text name=BTUE2T value="{{weekbdata[1][1][1]}}"></td></tr><tr><td><input type=text name=BTUE2L value="{{weekbdata[1][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BWED2S value="{{weekbdata[2][1][0]}}"></td></tr><tr><td><input type=text name=BWED2T value="{{weekbdata[2][1][1]}}"></td></tr><tr><td><input type=text name=BWED2L value="{{weekbdata[2][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTHU2S value="{{weekbdata[3][1][0]}}"></td></tr><tr><td><input type=text name=BTHU2T value="{{weekbdata[3][1][1]}}"></td></tr><tr><td><input type=text name=BTHU2L value="{{weekbdata[3][1][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BFRI2S value="{{weekbdata[4][1][0]}}"></td></tr><tr><td><input type=text name=BFRI2T value="{{weekbdata[4][1][1]}}"></td></tr><tr><td><input type=text name=BFRI2L value="{{weekbdata[4][1][2]}}"></td></tr></table></td>
+	</tr>
+	<tr>
+		<td>Period 3</td>
+		<td><table class="minitable"><tr><td><input type=text name=BMON3S value="{{weekbdata[0][2][0]}}"></td></tr><tr><td><input type=text name=BMON3T value="{{weekbdata[0][2][1]}}"></td></tr><tr><td><input type=text name=BMON3L value="{{weekbdata[0][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTUE3S value="{{weekbdata[1][2][0]}}"></td></tr><tr><td><input type=text name=BTUE3T value="{{weekbdata[1][2][1]}}"></td></tr><tr><td><input type=text name=BTUE3L value="{{weekbdata[1][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BWED3S value="{{weekbdata[2][2][0]}}"></td></tr><tr><td><input type=text name=BWED3T value="{{weekbdata[2][2][1]}}"></td></tr><tr><td><input type=text name=BWED3L value="{{weekbdata[2][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTHU3S value="{{weekbdata[3][2][0]}}"></td></tr><tr><td><input type=text name=BTHU3T value="{{weekbdata[3][2][1]}}"></td></tr><tr><td><input type=text name=BTHU3L value="{{weekbdata[3][2][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BFRI3S value="{{weekbdata[4][2][0]}}"></td></tr><tr><td><input type=text name=BFRI3T value="{{weekbdata[4][2][1]}}"></td></tr><tr><td><input type=text name=BFRI3L value="{{weekbdata[4][2][2]}}"></td></tr></table></td>
+	</tr>
+	<tr>
+		<td>Period 4</td>
+		<td><table class="minitable"><tr><td><input type=text name=BMON4S value="{{weekbdata[0][3][0]}}"></td></tr><tr><td><input type=text name=BMON4T value="{{weekbdata[0][3][1]}}"></td></tr><tr><td><input type=text name=BMON4L value="{{weekbdata[0][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTUE4S value="{{weekbdata[1][3][0]}}"></td></tr><tr><td><input type=text name=BTUE4T value="{{weekbdata[1][3][1]}}"></td></tr><tr><td><input type=text name=BTUE4L value="{{weekbdata[1][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BWED4S value="{{weekbdata[2][3][0]}}"></td></tr><tr><td><input type=text name=BWED4T value="{{weekbdata[2][3][1]}}"></td></tr><tr><td><input type=text name=BWED4L value="{{weekbdata[2][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BTHU4S value="{{weekbdata[3][3][0]}}"></td></tr><tr><td><input type=text name=BTHU4T value="{{weekbdata[3][3][1]}}"></td></tr><tr><td><input type=text name=BTHU4L value="{{weekbdata[3][3][2]}}"></td></tr></table></td>
+		<td><table class="minitable"><tr><td><input type=text name=BFRI4S value="{{weekbdata[4][3][0]}}"></td></tr><tr><td><input type=text name=BFRI4T value="{{weekbdata[4][3][1]}}"></td></tr><tr><td><input type=text name=BFRI4L value="{{weekbdata[4][3][2]}}"></td></tr></table></td>
+	</tr>
+	
+	</table></div>
+	
+	<div class=normalbox id=timetable-options style="margin-top:10px;">
+		It is currently...<br>
+		{% if isweeka %}
+		<input type=radio name=week value=a style="width: auto;" checked> Week A<br>
+		<input type=radio name=week value=b style="width: auto;"> Week B<br>
+		{% else %}
+		<input type=radio name=week value=a style="width: auto;"> Week A<br>
+		<input type=radio name=week value=b style="width: auto;" checked> Week B<br>
+		{% endif %}
+		<input type=submit value="Save timetable"></div>
+	</form>
+</div></body>
+
+</html>
