@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="/resource/css/all.css">
+	<link rel="stylesheet" href="/resource/css/eventedit.css">
+</head>
+
+<body><div id="page-wrapper">
+	<h2>Edit event:</h2>
+	<form action="/editevent" method=post>
+		<span>Sharing Key (Don't edit): </span><input name="sharekey" type=text value={{eventkey}}>
+		<span>Name of the event:</span> <input type=text name="name" value="{{eventname}}">
+		<span>Type of event:</span> <input type=text name="type" value="{{eventtype}}">
+		<span>Date of the event:</span> <input type=date name="datewhen" value="{{eventwhendate}}">
+		<span>Date of the event:</span> <input type=time name="timewhen" value="{{eventwhentime}}">
+		<span>Event description:</span> <textarea name="description" cols=42 rows=6>{{eventdescription}}</textarea>
+		<input id=submit type=submit value="Save event details">
+	</form>
+</div></body>
+
+</html>
