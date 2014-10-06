@@ -1,0 +1,5 @@
+cron: 
+- description: Weekly AB switch
+  url: /admin/weekswitch
+  schedule: every sat 00:00
+  timezone: Australia/NSW
