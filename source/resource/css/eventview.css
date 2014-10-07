@@ -1,0 +1,17 @@
+body {
+	background:#FFF;
+	}
+
+#page-wrapper {
+	width:350px;
+	margin:auto;
+	}
+
+#filterform {
+	display:inline;
+	}
+
+#event-box {
+	padding: 10px;
+	margin-top: 10px;
+	}

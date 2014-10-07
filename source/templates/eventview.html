@@ -1,0 +1,27 @@
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="/resource/css/all.css">
+	<link rel="stylesheet" href="/resource/css/eventview.css">
+</head>
+
+<body><div id="page-wrapper">
+	<a href="/createevent"><button id="createbutton">New Event</button><form id=filterform action="/event" method=get></a><input type=text name=typefilter placeholder="Filter events by type." value="{{typefilterword}}"><input type=submit value="Apply filter"></form>
+	{% if eventlist == [] %}
+	<p>There are no events. Create some with the button above or looosen the filter.</p>
+	{% else %}
+	{% for event in eventlist %}
+	<div id="event-box" class="normalbox">
+	<strong>{{event.name}}</strong><br>
+	{{event.type}}<br>
+	{{prettydatetime(event.when)}}<br><hr>
+	{{event.description}}<br>
+	<a href="/editevent?key={{event.key.urlsafe()}}"><button style="width:50%">Edit details</button></a><a href="/deleteevent?key={{event.key.urlsafe()}}"><button style="width:50%">Delete event</button></a>
+	</div>
+	{% endfor %}
+	{% endif %}
+</div></body>
+
+</html>
+

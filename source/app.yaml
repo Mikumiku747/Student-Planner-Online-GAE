@@ -20,6 +20,19 @@ handlers:
   script: timetable.app
   login: required
   
+- url: /event
+  script: event.app
+  login: required
+- url: /createevent
+  script: event.app
+  login: required
+- url: /editevent
+  script: event.app
+  login: required
+- url: /deleteevent
+  script: event.app
+  login: required
+  
 - url: /dev/agent
   script: dev.app
   
