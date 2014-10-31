@@ -1,0 +1,173 @@
+/*Multi-platform stylesheet*/
+
+/* Reset styling */
+* {
+	margin: 0px;
+	}
+
+/* General styling */
+body {
+	font-family: sans-serif;
+	margin: 0;
+	}
+	
+a {
+	color: #AAA;
+	}
+
+p {
+	margin-top:1em;
+	}
+	
+.title-area {
+	background: #333;
+	color: #FFF;
+	padding: 10px;
+}
+
+.content-area {
+	margin-bottom: 4em;
+    }
+
+.footer-spacer {
+	height:2em;
+	width:100%;
+	}
+
+.ending-area {
+	background: #333;
+	color: #FFF;
+	position: fixed;
+	bottom: 0px;
+	padding: 0.5em 2.5%;
+	width:95%;
+}
+
+.content-small {
+	border: solid #333;
+	border-width: 2%;
+	padding: 1.25%;
+	margin: 1.25%;
+	width: 93%;
+	}
+
+.content-dom-small {
+	border: solid #333;
+	border-width: 2%;
+	padding: 1.25%;
+	margin: 1.25%;
+	width: 93%;
+	}
+
+.content-medium {
+	border: solid #333;
+	border-width: 2%;
+	padding: 1.25%;
+	margin: 1.25%;
+	width: 93%;
+	}
+	
+.content-large {
+	border: solid #333;
+	background:#EEE;
+	border-width: 2%;
+	padding: 1.25%;
+	margin: 1.25%;
+	width: 93%;
+	}
+	
+.content-full {
+	border: solid #333;
+	border-width: 2%;
+	padding: 1.25%;
+	margin: 1.25%;
+	width: 93%;
+	}
+
+.content-rule {
+	width:100%;
+	height:1em;
+	}
+	
+/* Font resizing */
+h1 {
+	font-size: 2em;
+	}
+h2 {
+	font-size: 1em;
+	}
+h3 {
+	font-size: 1em;
+	}
+
+/* Medium-screen styling */
+@media (min-width:600px) {
+.footer-spacer {
+	float:left;
+	}
+.content-small {
+	width: 44%;
+	float: left;
+	}
+.content-dom-small {
+	width: 93%;
+	float: left;
+	}
+.content-medium {
+	width: 44%;
+	float: left;
+	}
+.content-large {
+	width: 93%;
+	float: left;
+	}
+.content-full {
+	float: left;
+	}
+.content-rule {
+	float:left;
+	}
+h1 {
+	font-size: 3em;
+	}
+h2 {
+	font-size: 1.5em;
+	}
+h3 {
+	font-size: 1.5em;
+	}
+
+}
+
+/* Large-screen styling */
+@media (min-width:1200px) {
+* {
+	font-size:small;
+}
+.content-small {
+	width: 28%;
+	float: left;
+	}
+.content-dom-small {
+	width: 27%;
+	float: left;
+	}
+.content-medium {
+	width: 61%;
+	float: left;
+	}
+.content-large {
+	width: 44%;
+	float: left;
+	}
+h1 {
+	font-size: 6em;
+	}
+h2 {
+	font-size: 3em;
+	}
+h3 {
+	font-size: 2em;
+	}
+
+}

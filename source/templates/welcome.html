@@ -1,15 +1,61 @@
 <html>
 
 <head>
-	<title>Student Planner Online</title>
-	<link rel="stylesheet" href="/resource/css/all.css">
-	<link rel="stylesheet" href="/resource/css/welcome.css"
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/css/multiplat.css">
+	<link rel="stylesheet" href="resource/css/welcome-custom.css">
+	<title>Welcome - Student Planner Online</title>
 </head>
 
-<body><div id="welcome-wrap">
-	<center><h1 id="title-box" class="normalbox">Welcome to student planner online!</h1>
-	<p id="description-box" class="normalbox">This is a place where you can look at your time table, upcoming exams and events, and track your study time. To get started, sign in with your Google account.</p>
-	<h2 class="normalbox" id="signin-box"><a id="signin-link" href="{{auth_url}}">Sign in</a></h2></center>
-</div></body>
+<body>
 
-</html>
+<header class="title-area">
+	<h1>Student Planner Online</h1>
+	<h2 style="width:100%;">Helping you get your study under control</h2>
+</header>
+	
+<div id="content-area">
+	<div class="content-large" id="getting-started">
+	<h3>Getting started</h3>
+	<p>To get started, all you need is a Google account. If you use Gmail, YouTube, or sign into any of Google's other services, then you're already good to go! If not, you can create one when you sign in.</p>
+	<p>Worried about security? This site is built using Google's App Engine framework, the same technology and security that powers Google Docs, Calendar, and other app systems. The source code is also freely available, so you can know we're not doing anything dirty with your information.</p>
+	<p>Click the link below to sign in:</p>
+	<br>
+	<center><a id="signin-link" href="{{auth_url}}">Sign in</a></center>
+	<br>
+	</div>
+	
+	<div class="content-large">
+	<h3>What is student planner online?</h3>
+	<p>Student planner online is a website that is made to help students with thier school life in a simple and easy way, from a range of devices.</p>
+	</div>
+		
+	<div class="content-large">
+	<h3>What can student planner online do?</h3>
+	<p>When I made student planner online, it was because I was lazy. I didn't like using our school diaries, as they were bulky, ugly, and annoying to get out and write in every time I wanted to put an event down. So I made this website to replace it. This site currently replaces my school diary, but soon it will have a study tracker, with a study log, tracker, goals and more.</p>
+	<p>Right now, you can:</p>
+	<ul>
+		<li>Store your timetable online, and view it on your phone, tablet or computer.</li>
+		<li>Create and manage events, helping you to keep track of important dates and times such as assignments or social outings.</li>
+		<li>Soon to come: Study log, with tracking and goals, to help you motivate yourself to study.</li>
+	</ul>
+	</div>
+	
+	<div class="content-large" id="timetable-overview">
+	<h3>Online timetable</h3>
+	<p>You'll never have to worry about forgetting your timetable again with the online timetable, that has space for teachers, class names, locations, and more. It formats to appear in the most convenient form, from  a single day's overview to viewing the entire week, depending on your screen size.</p>
+	</div>
+	
+	<div class="content-large" id="events-overview">
+	<h3>Online timetable</h3>
+	<p>Keep track of your school, social and working life with events. They provide you with a quick list of things coming up in a glance. No longer will you forget about that pesky assignment that you were procrastinating against, or that lunch classmates that you forgot to go to. Events keeps the happenings in your life under control. </p>
+	</div>
+</div>
+
+<div class="footer-spacer"></div>
+
+<footer class="ending-area">
+	<p style="display:inline;">&copy Daniel Selmes 2014. <a href="https://github.com/Mikumiku747/Student-Planner-Online-GAE">Developers</a></p>
+</footer>
+
+</body></html>

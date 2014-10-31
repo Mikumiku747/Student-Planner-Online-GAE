@@ -1,0 +1,23 @@
+#signin-link {
+	font-size:2em;
+	border: solid #00F 0.1em;
+	padding: 0.1em;
+	color:#FFF;
+	background:#55F;
+	text-decoration:none;
+	}
+
+#getting-started {
+	border-color:#55F;
+	background:#DDF;
+	}
+
+#timetable-overview {
+	border-color:#F55;
+	background:#FDD;
+	}
+
+#events-overview {
+	border-color:#5F5;
+	background:#DFD;
+	}
