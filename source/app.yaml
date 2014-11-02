@@ -9,6 +9,9 @@ handlers:
   script: main.app
 - url: /welcome
   script: main.app
+- url: /settings
+  script: main.app
+  login: required
   
 - url: /timetable
   script: timetable.app

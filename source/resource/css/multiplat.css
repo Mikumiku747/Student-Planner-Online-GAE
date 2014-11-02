@@ -12,7 +12,7 @@ body {
 	}
 	
 a {
-	color: #AAA;
+	color: #333;
 	}
 
 p {
@@ -145,7 +145,7 @@ h3 {
 	font-size:small;
 }
 .content-small {
-	width: 28%;
+	width: 27%;
 	float: left;
 	}
 .content-dom-small {

@@ -1,27 +1,48 @@
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="/resource/css/all.css">
-	<link rel="stylesheet" href="/resource/css/eventview.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/css/multiplat.css">
+	<link rel="stylesheet" href="resource/css/eventview-custom.css">
+	<title>Events - Student Planner Online</title>
 </head>
 
-<body><div id="page-wrapper">
-	<a href="/createevent"><button id="createbutton">New Event</button><form id=filterform action="/event" method=get></a><input type=text name=typefilter placeholder="Filter events by type." value="{{typefilterword}}"><input type=submit value="Apply filter"></form>
+<body>
+<header class="title-area">
+	<h1>Events</h1>
+	<h2>View and manage upcoming events</h2>
+</header>
+	
+<div id="content-area">
+	<div class=content-small>
+		<h3>Manage events</h3>
+		<p><a href="createevent"><button>Create a new event</button></a><br>
+		Create a new event. You can edit the details, such as what event, when, and the description, when you create one.</p>
+		<p><form method=get action=event>
+		<input type=text name=typefilter placeholder="Filter events by type" value="{{typefilterword}}"> <input type=submit value="Apply filter"></form><br>
+		You can filter events by type, so you only see the events that match the filter. This is useful if you only want to see events for a particular subject, or social events, or any other filter you make.</p>
+	</div>
 	{% if eventlist == [] %}
-	<p>There are no events. Create some with the button above or looosen the filter.</p>
+	<div class=content-small>
+	<p>No events found. Go create some events or use a different filter. </p>
+	</div>
 	{% else %}
 	{% for event in eventlist %}
-	<div id="event-box" class="normalbox">
-	<strong>{{event.name}}</strong><br>
-	{{event.type}}<br>
-	{{prettydatetime(event.when)}}<br><hr>
-	{{event.description}}<br>
-	<a href="/editevent?key={{event.key.urlsafe()}}"><button style="width:50%">Edit details</button></a><a href="/deleteevent?key={{event.key.urlsafe()}}"><button style="width:50%">Delete event</button></a>
+	<div class=content-small>
+		<h3>{{event.name}}</h3><br>
+		<a href="/editevent?key={{event.key.urlsafe()}}">Edit</a> <a href="/deleteevent?key={{event.key.urlsafe()}}">Delete</a><br>
+		{{prettydatetime(event.when)}}, {{event.type}}<br>
+		{{event.description}}<br>
 	</div>
 	{% endfor %}
 	{% endif %}
-</div></body>
+	</div>
+</div>
 
-</html>
+<div class="footer-spacer"></div>
 
+<footer class="ending-area">
+	&copy Daniel Selmes 2014 <a href="/" style="color:#FFF">Home</a>
+</footer>
+
+</body></html>

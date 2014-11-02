@@ -1,33 +1,48 @@
 <html>
 
 <head>
-	<title>Student Planner Online</title>
-	<link rel="stylesheet" href="/resource/css/home.css">
-	<link rel="stylesheet" href="/resource/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/css/multiplat.css">
+	<link rel="stylesheet" href="resource/css/homepage-custom.css">
+	<title>Home - Student Planner Online</title>
 </head>
 
-<body><div id="home-wrap">
-
-	<div class="normalbox" id="title-box"><h1 id="title-text">Student planner online</h1></div>
-	<div id="heading-filler"></div>
-	<div class="normalbox" id="logo-box"><img id="logo-logo" src="/resource/img/logo37x37.jpg"></div>
-
-	<p class="normalbox" id="greeting-box">Welcome, {{user_nickname}}</p> 
-	<p class="normalbox" id="signout-box"><a  id="signout-link" href="{{auth_url}}">Logout</a></p>
-
-	<div class="normalbox" id="timetable-box">
-		<h3 id="timetable-title">Timetable:</h3>
-		<iframe id="timetable-iframe" src="/timetable">Your browser does not support iframes, so it is inferior to others! I reccomend Google Chrome or Mozilla Firefox. Or maybe even IE. Sriously, IE is better than your frameless browser!</iframe>
+<body>
+<header class="title-area">
+	<h1>Student Planner Online</h1>
+	<h2>Main menu</h2>
+</header>
+	
+<div id="content-area">
+	<div class="content-full" id="menu-title">
+		<center>
+		Welcome, {{user_nickname}}<br><a id=signout_link href={{auth_url}}>Sign out</a>
+		</center>
 	</div>
-	<div class="normalbox" id="events-box">
-		<h3 id="events-title">Upcoming events:</h3>
-		<iframe id="events-iframe" src="/event">Your browser does not support iframes, so it is inferior to others! I reccomend Google Chrome or Mozilla Firefox. Or maybe even IE. Sriously, IE is better than your frameless browser!</iframe>
+	
+	<a href="timetable"><div class="content-full" id="timetable-button">
+		<h3>Timetable</h3>
+	</div></a>
+	<a href="event"><div class="content-full" id="event-button">
+		<h3>Events</h3>
+	</div></a>
+	<a href="settings"><div class="content-full" id="settings-button">
+		<h3>Settings</h3>
+	</div></a>
+	
+	<div class="appicons">
+		<a href="timetable"><img src="resource/img/timetable-icon.png" class="appicon-img"></a>
+		<a href="event"><img src="resource/img/events-icon.png" class="appicon-img"></a>
+		<a href="settings"><img src="resource/img/settings-icon.png" class="appicon-img"></a>
 	</div>
-	<div class="normalbox" id="settings-box">
-		<h2 id="settings-title" >Settings</h2><br>
-		<a href="/edittimetable"><div class="settings-icon"><img src="/resource/img/gear-icon.png" width=150px height=150px ><br><h3><center>Edit Timetable</center></h3></div></a>
-	</div>
+	
+</div>
 
-</div></body>
+<div class="footer-spacer"></div>
 
-</html>
+<footer class="ending-area">
+	<p style="display:inline;">&copy Daniel Selmes 2014 
+		<a href="https://github.com/Mikumiku747/Student-Planner-Online-GAE" style="color:#FFF;">Developers</a></p>
+</footer>
+
+</body></html>

@@ -30,7 +30,12 @@ class HomePageHandler(webapp2.RequestHandler):
 			#else:
 			template = JINJA_ENVIRONMENT.get_template('templates/homepage.html')
 			self.response.write(template.render({'user_nickname':user.nickname(), 'auth_url':auth_url}))
-
+			
+class SettingsPageHandler(webapp2.RequestHandler):
+	def get(self):
+		user = users.get_current_user()
+		template = JINJA_ENVIRONMENT.get_template("templates/settings.html")
+		self.response.write(template.render({"user_nickname":user.nickname()}))
 
 class NotFoundHandler(webapp2.RequestHandler):
 	def get(self):
@@ -39,5 +44,6 @@ class NotFoundHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
 	('/', HomePageHandler),
+	('/settings', SettingsPageHandler),
 	('.*', NotFoundHandler)], 
 	debug=True)

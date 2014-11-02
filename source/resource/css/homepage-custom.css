@@ -1,0 +1,49 @@
+#timetable-button {
+	border-color:#800;
+	background:#F55;
+	}
+	
+#event-button {
+	border-color:#080;
+	background:#5F5;
+	}
+
+#settings-button {
+	border-color:#000;
+	background:#DDD;
+	}
+
+.appicon-img {
+	width:31.728%;
+	border:solid black 0.2em;
+	}
+
+.appicons {
+	border: solid #333;
+	border-width: 2%;
+	padding: 1.25%;
+	margin: 1.25%;
+	width: 93%;
+	float:left;
+	}
+
+@media(max-width:599px) {
+.appicons {
+	display:none;
+	}
+.appframes {
+	display:none;
+	}
+}
+
+@media(min-width:600px) {
+#timetable-button {
+	display:none;
+	}
+#event-button {
+	display:none;
+	}
+#settings-button {
+	display:none;
+	}
+}
